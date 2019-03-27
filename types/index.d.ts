@@ -319,20 +319,16 @@ declare var FileWriter: {
 };
 
 /**
- * This interface wraps the standard FileReader
+ * This class wraps the standard FileReader
  */
-interface LocalFileReader extends FileReader {
+declare class LocalFileReader extends FileReader {
     _realReader: FileReader;
     readonly _result: string | ArrayBuffer | null;
-}
-
-/* LocalFileReader states */
-declare var LocalFileReader: {
     EMPTY: number;
     LOADING: number;
     DONE: number
-};
 
+}
 
 interface FileError {
     /** Error code */
