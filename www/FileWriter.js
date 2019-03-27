@@ -21,7 +21,7 @@
 
 var exec = require('cordova/exec');
 var FileError = require('./FileError');
-var LocalFileReader = require('./FileReader');
+var LocalFileReader = require('./LocalFileReader');
 var ProgressEvent = require('./ProgressEvent');
 
 /**
