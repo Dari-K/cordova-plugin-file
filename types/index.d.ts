@@ -318,6 +318,22 @@ declare var FileWriter: {
     DONE: number
 };
 
+/**
+ * This interface wraps the standard FileReader
+ */
+interface LocalFileReader extends FileReader {
+    _realReader: FileReader;
+    readonly _result: string | ArrayBuffer | null;
+}
+
+/* LocalFileReader states */
+declare var LocalFileReader: {
+    EMPTY: number;
+    LOADING: number;
+    DONE: number
+};
+
+
 interface FileError {
     /** Error code */
     code: number;
