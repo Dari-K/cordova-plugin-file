@@ -15,7 +15,7 @@
         "cordova": false,
         "File": true,
         "FileSystem": true,
-        "FileReader": true,
+        "LocalFileReader": true,
         "FileWriter": true,
         "FileError": true,
         "LocalFileSystem": true,
