@@ -382,9 +382,3 @@ interface Cordova {
         sharedDirectory: string
     }
 }
-
-
-declare enum LocalFileSystem {
-    PERSISTENT=1,
-    TEMPORARY=0
-}
