@@ -15,7 +15,7 @@ interface Window {
      * @param errorCallback     A callback that is called when errors happen, or when the request to obtain the filesystem is denied.
      */
     requestFileSystem(
-        type: LocalFileSystem,
+        type: number,
         size: number,
         successCallback: (fileSystem: FileSystem) => void,
         errorCallback?: (fileError: FileError) => void): void;
@@ -330,7 +330,7 @@ declare class LocalFileReader extends FileReader {
 
 }
 
-interface FileError {
+interface FileError extends DOMError {
     /** Error code */
     code: number;
 }
